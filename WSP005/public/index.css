@@ -1,0 +1,14 @@
+.text {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-size: 50px;
+}
+
+canvas {
+    box-shadow: #000 10px 10px 10px 5px;
+    position: absolute;
+}
+
+.enter-text {
+    position: relative;
+}
