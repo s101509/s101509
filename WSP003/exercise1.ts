@@ -1,7 +1,7 @@
 import fs from 'fs';
 
 listAllJS('C:\\Users\\wytam\\Documents\\TeckyCMS\\GameOfLife');
-
+//asd
 async function listAllJS(path: string): Promise<void> {
     const files = await fs.promises.readdir(path);
     for (const file of files){
