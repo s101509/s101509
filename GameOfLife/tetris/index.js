@@ -357,17 +357,19 @@ function down() {
     }
 }
 
+const pop = new Audio('pop.mp3')
+
 function checkLine() {
     for (let y = 0; y < rows; y++) {
         let lineFill = true;
         for (let x = 0; x < columns; x++) {
             if (currentBoard[x][y].value == 0) {
                 lineFill = false;
-
+                break;
             }
         }
         if (lineFill) {
-            new Audio('pop.mp3').play();
+            pop.play();
             score += +100;
             let countScore = document.querySelector('#score');
             countScore.innerHTML = `Score: ${score}`;
@@ -431,6 +433,7 @@ function right() {
             if (currentBoard[x][y].movable) {
                 if (x == 9 || nextBoard[x + 1][y].value == 1) {
                     limited = true;
+                    return
                 } else {
                     nextBoard[x + 1][y] = currentBoard[x][y]
                 }

@@ -1,3 +1,11 @@
+// const helenGame = {
+//     mouseDown: false,
+//     darkMode: false,
+//     clear: function() {
+// 
+//     }
+// }
+
 let mDown = false;
 
 const boxColor = 000;
