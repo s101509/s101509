@@ -1,138 +1,138 @@
 .somebox {
-    box-sizing: border-box;
-    padding: 2px;
-    width: 100px;
-    height: 100px;
-    border: solid 5px #15a091;
-    background: #1bbcab;
+	box-sizing: border-box;
+	padding: 2px;
+	width: 100px;
+	height: 100px;
+	border: solid 5px #15a091;
+	background: #1bbcab;
 }
 
 .box-container .somebox:nth-child(1) {
-    border-top-width: 0px;
-    border-left-width: 0px;
+	border-top-width: 0px;
+	border-left-width: 0px;
 }
 
 .box-container .somebox:nth-child(2) {
-    border-top-width: 0px;
+	border-top-width: 0px;
 }
 
 .box-container .somebox:nth-child(3) {
-    border-top-width: 0px;
-    border-right-width: 0px;
+	border-top-width: 0px;
+	border-right-width: 0px;
 }
 
 .box-container .somebox:nth-child(4) {
-    border-left-width: 0px;
+	border-left-width: 0px;
 }
 
 .box-container .somebox:nth-child(6) {
-    border-right-width: 0px;
+	border-right-width: 0px;
 }
 
 .box-container .somebox:nth-child(7) {
-    border-bottom-width: 0px;
-    border-left-width: 0px;
+	border-bottom-width: 0px;
+	border-left-width: 0px;
 }
 
 .box-container .somebox:nth-child(8) {
-    border-bottom-width: 0px;
+	border-bottom-width: 0px;
 }
 
 .box-container .somebox:nth-child(9) {
-    border-bottom-width: 0px;
-    border-right-width: 0px;
+	border-bottom-width: 0px;
+	border-right-width: 0px;
 }
 
 .somebox p {
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
 }
 
 .box-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 350px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 350px;
 }
 
 .top-container {
-    display: flex;
-    justify-content: space-between;
-    padding: 0px 20px 0px 20px;
+	display: flex;
+	justify-content: space-between;
+	padding: 0px 20px 0px 20px;
 }
 
 .middle-container {
-    display: flex;
-    justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 
 .outer-container {
-    box-sizing: border-box;
-    width: 600px;
-    border: solid 1px rgb(105, 105, 105);
-    border-radius: 10px;
+	box-sizing: border-box;
+	width: 600px;
+	border: solid 1px rgb(105, 105, 105);
+	border-radius: 10px;
 }
 
 img {
-    object-fit: contain;
+	object-fit: contain;
 }
 
 .border-container1 {
-    box-sizing: border-box;
-    border-radius: 10px;
-    width: 200px;
-    display: flex;
-    border: solid 1px #565b5a;
-    margin: 20px;
-    height: 50px;
-    justify-content: center;
-    justify-content: space-between;
-    box-shadow: 3px 5px 1px #1bbcab;
-    padding: 0px 10px 0px 10px;
+	box-sizing: border-box;
+	border-radius: 10px;
+	width: 200px;
+	display: flex;
+	border: solid 1px #565b5a;
+	margin: 20px;
+	height: 50px;
+	justify-content: center;
+	justify-content: space-between;
+	box-shadow: 3px 5px 1px #1bbcab;
+	padding: 0px 10px 0px 10px;
 }
 
 .border-container2 {
-    box-sizing: border-box;
-    border-radius: 10px;
-    width: 200px;
-    display: flex;
-    border: solid 1px #565b5a;
-    margin: 20px;
-    height: 50px;
-    justify-content: center;
-    justify-content: space-between;
-    box-shadow: 2px 2px 1px #bcbebe;
-    padding: 0px 10px 0px 10px;
+	box-sizing: border-box;
+	border-radius: 10px;
+	width: 200px;
+	display: flex;
+	border: solid 1px #565b5a;
+	margin: 20px;
+	height: 50px;
+	justify-content: center;
+	justify-content: space-between;
+	box-shadow: 2px 2px 1px #bcbebe;
+	padding: 0px 10px 0px 10px;
 }
 
 .my-auto {
-    margin-top: auto;
-    margin-bottom: auto;
+	margin-top: auto;
+	margin-bottom: auto;
 }
 
 .mx-auto {
-    margin-left: auto;
-    margin-right: auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .bkg {
-    background: #1bbcab;
-    width: 100%;
-    padding: 20px 0px 20px 0px;
+	background: #1bbcab;
+	width: 100%;
+	padding: 20px 0px 20px 0px;
 }
 
 .text {
-    text-align: center;
-    color: #1bbcab;
-    font-weight: 600;
-    font-size: 25px;
-    padding: 20px 0px 20px 0px;
+	text-align: center;
+	color: #1bbcab;
+	font-weight: 600;
+	font-size: 25px;
+	padding: 20px 0px 20px 0px;
 }
 
 .feedback {
-    color: rgb(105, 105, 105);
-    font-style: italic;
-    font-size: 5px;
-    text-align: right;
+	color: rgb(105, 105, 105);
+	font-style: italic;
+	font-size: 5px;
+	text-align: right;
 }

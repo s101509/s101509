@@ -18,8 +18,7 @@
 </head>
 
 <body style="height:90vh">
-    <div onclick="closeNav()" id="overlay-container" class="d-md-none overlay-hide">
-    </div>
+
     <div class="overlay animate__animated d-none animate__zoomOut">
         <div class="d-flex flex-column">
             <i onclick="closeNav()" class="fa-solid fa-xmark d-flex mt-4 me-4 
@@ -31,6 +30,8 @@
                 <a href="/index.html " class="">
                     <button class="button-74 w-100  " role="button ">Back</button>
                 </a>
+                <div onclick="closeNav()" id="overlay-container" class="d-md-none overlay-hide">
+                </div>
             </div>
         </div>
     </div>
@@ -100,5 +101,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/p5.js "></script>
         <script src="index.js "></script>
 </body>
+
 
 </html>

@@ -1,41 +1,30 @@
 <html>
+	<script>
+		function getRandomInt(max) {
+			return Math.floor(Math.random() * max)
+		}
 
+		const bingo = getRandomInt(11)
 
-<script>
+		var lose = 0
 
-    function getRandomInt(max) {
-        return Math.floor(Math.random() * max);
-    }
-
-
-    const bingo = getRandomInt(11);
-
-    var lose = 0;
-
-    do {
-        let sign = prompt("Guess the numer from 0 to 10.");
-        if(sign == bingo){
-            alert("Bingo!");
-            break;
-        }else{
-            alert("You are wrong, please guess again.");
-            if(sign > bingo){
-                alert("Your input is larger than the answer.")
-            }else{
-                alert("Your input is smaller than the answer.")
-            }
-            lose++;
-            if(lose == 3){
-                alert("Game over.")
-            }
-        }
-
-    } while (lose < 3)
-
- 
-
-
-
-</script>
-
+		do {
+			let sign = prompt('Guess the numer from 0 to 10.')
+			if (sign == bingo) {
+				alert('Bingo!')
+				break
+			} else {
+				alert('You are wrong, please guess again.')
+				if (sign > bingo) {
+					alert('Your input is larger than the answer.')
+				} else {
+					alert('Your input is smaller than the answer.')
+				}
+				lose++
+				if (lose == 3) {
+					alert('Game over.')
+				}
+			}
+		} while (lose < 3)
+	</script>
 </html>

@@ -1,4 +1,4 @@
-function drawMemo() {
+/* function drawMemo() {
     const memo = document.getElementById('memo');
     if (memo.getContext) {
         const ctx = memo.getContext('2d');
@@ -9,4 +9,4 @@ function drawMemo() {
 
 }
 
-drawMemo();
+drawMemo(); */

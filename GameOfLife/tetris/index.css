@@ -1,139 +1,138 @@
 body {
-    font-family: 'Fredoka One', cursive;
-    background-color: #94b49f;
+	font-family: 'Fredoka One', cursive;
+	background-color: #94b49f;
 }
 
 .dark-mode {
-    font-family: 'Fredoka One', cursive;
-    background-color: #1F1D36;
-    color: #fbeee0;
+	font-family: 'Fredoka One', cursive;
+	background-color: #1f1d36;
+	color: #fbeee0;
 }
 
 .next-container {
-    height: auto;
-    background-color: #fbeee0;
-    border-radius: 10px;
-    padding: 0.5rem;
+	height: auto;
+	background-color: #fbeee0;
+	border-radius: 10px;
+	padding: 0.5rem;
 }
 
 .body-container {
-    max-width: 30rem;
+	max-width: 30rem;
 }
 
 .button-74 {
-    background-color: #fbeee0;
-    border: 2px solid #422800;
-    border-radius: 30px;
-    box-shadow: #422800 4px 4px 0 0;
-    color: #422800;
-    cursor: pointer;
-    display: inline-block;
-    font-weight: 600;
-    font-size: 14px;
-    padding: 0 18px;
-    line-height: 50px;
-    text-align: center;
-    text-decoration: none;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
+	background-color: #fbeee0;
+	border: 2px solid #422800;
+	border-radius: 30px;
+	box-shadow: #422800 4px 4px 0 0;
+	color: #422800;
+	cursor: pointer;
+	display: inline-block;
+	font-weight: 600;
+	font-size: 14px;
+	padding: 0 18px;
+	line-height: 50px;
+	text-align: center;
+	text-decoration: none;
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
 }
 
 .button-74:hover {
-    background-color: #fff;
+	background-color: #fff;
 }
 
 .button-74:active {
-    box-shadow: #422800 2px 2px 0 0;
-    transform: translate(2px, 2px);
+	box-shadow: #422800 2px 2px 0 0;
+	transform: translate(2px, 2px);
 }
 
 @media (min-width: 768px) {
-    .button-74 {
-        min-width: 120px;
-        padding: 0 25px;
-    }
+	.button-74 {
+		min-width: 120px;
+		padding: 0 25px;
+	}
 }
 
 .arrow {
-    font-size: 25px;
-    color: #422800;
-    text-align: center;
-    padding: 1rem;
+	font-size: 25px;
+	color: #422800;
+	text-align: center;
+	padding: 1rem;
 }
 
 .bkg {
-    background-color: #FCF8E8;
+	background-color: #fcf8e8;
 }
 
 .button-round {
-    background-color: #fbeee0;
-    border: 2px solid #422800;
-    border-radius: 50px;
-    color: #422800;
-    cursor: pointer;
-    display: flex;
-    text-align: center;
-    touch-action: manipulation;
+	background-color: #fbeee0;
+	border: 2px solid #422800;
+	border-radius: 50px;
+	color: #422800;
+	cursor: pointer;
+	display: flex;
+	text-align: center;
+	touch-action: manipulation;
 }
 
 .button-round:hover {
-    background-color: #fff;
+	background-color: #fff;
 }
 
 .button-round:active {
-    box-shadow: #422800 2px 2px 0 0;
-    transform: translate(2px, 2px);
+	box-shadow: #422800 2px 2px 0 0;
+	transform: translate(2px, 2px);
 }
-
 
 /* The Overlay (background) */
 
 #overlay-container {
-    position: fixed;
-    height: 100%;
-    width: 100%;
-    z-index: index 10;
-    background-color: rgba(0, 0, 0, 0.25);
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	z-index: index 10;
+	background-color: rgba(0, 0, 0, 0.25);
 }
 
 .overlay {
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    /* Height & width depends on how you want to reveal the overlay (see JS below) */
-    height: auto;
-    position: fixed;
-    margin: auto;
-    width: 80%;
-    /* Stay in place */
-    z-index: 11;
-    /* Sit on top */
-    background-color: rgb(0, 0, 0);
-    /* Black fallback color */
-    background-color: #e4caaf;
-    /* Black w/opacity */
-    overflow-x: hidden;
-    /* Disable horizontal scroll */
-    /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
-    border-radius: 5%;
-    box-shadow: #422800 2px 2px 0 0;
-    opacity: 100%;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	/* Height & width depends on how you want to reveal the overlay (see JS below) */
+	height: auto;
+	position: fixed;
+	margin: auto;
+	width: 80%;
+	/* Stay in place */
+	z-index: 11;
+	/* Sit on top */
+	background-color: rgb(0, 0, 0);
+	/* Black fallback color */
+	background-color: #e4caaf;
+	/* Black w/opacity */
+	overflow-x: hidden;
+	/* Disable horizontal scroll */
+	/* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+	border-radius: 5%;
+	box-shadow: #422800 2px 2px 0 0;
+	opacity: 100%;
 }
 
 .overlay-content {
-    /* 25% from the top */
-    width: 100%;
-    padding: 0.7rem 2rem 2rem 2rem;
-    /* Centered text/links */
-    /* 30px top margin to avoid conflict with the close button on smaller screens */
+	/* 25% from the top */
+	width: 100%;
+	padding: 0.7rem 2rem 2rem 2rem;
+	/* Centered text/links */
+	/* 30px top margin to avoid conflict with the close button on smaller screens */
 }
 
-.overlay-content>button {
-    margin-bottom: 0.7rem;
+.overlay-content > button {
+	margin-bottom: 0.7rem;
 }
 
 .overlay-hide {
-    width: 0!important;
-    height: 0!important;
+	width: 0 !important;
+	height: 0 !important;
 }

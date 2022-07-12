@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="index.css" />
+		<title>Memo Wall</title>
+	</head>
+
+	<body>
+		<h1>
+			<span>網</span>
+			<span>上</span>
+			<span>連</span>
+			<span>儂</span>
+			<span>牆</span>
+		</h1>
+
+		<div class="wrap">
+			<aside>
+				<form
+					class="memoForm"
+					method="POST"
+					action="/addMemo"
+					enctype="multipart/form-data"
+				>
+					<div class="memo"><textarea name="content"></textarea></div>
+					<input type="file" name="photo" />
+					<input type="submit" value="貼" />
+				</form>
+
+				<h2>連儂管理員專用</h2>
+				<form class="loginForm" method="POST" action="/logout">
+					<input type="submit" value="登出" />
+				</form>
+			</aside>
+			<main>
+				<div class="memo"></div>
+				<div class="memo"></div>
+				<div class="memo"></div>
+				<div class="memo"></div>
+			</main>
+		</div>
+
+		<script>
+			var isAdmin = true
+		</script>
+		<script src="index.js"></script>
+	</body>
+</html>

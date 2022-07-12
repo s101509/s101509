@@ -5,18 +5,17 @@ import expressSession from 'express-session'
 const app = express()
 
 app.use((req, res, next) => {
-    try {
-        console.log(req.url)
-        console.log(req.headers)
-        console.log(req.body)
-        console.log(req.ip)
+	try {
+		console.log(req.url)
+		console.log(req.headers)
+		console.log(req.body)
+		console.log(req.ip)
 
-        next()
-    }
-    catch (e) {
-        res.status(404);
-        res.end();
-    }
+		next()
+	} catch (e) {
+		res.status(404)
+		res.end()
+	}
 })
 
 /* app.get('/index.html', async (req, res) => {
@@ -34,10 +33,9 @@ app.get('/index.html', async (req, res) => {
 
 app.use(express.static('./public'))
 
+app.get('*', function (req, res) {
+	console.log(11223)
+	res.status(404).render('404 not found')
+})
 
-app.get('*', function(req, res){
-    console.log(11223)
-    res.status(404).render('404 not found');
-  });
-  
 app.listen(8080)

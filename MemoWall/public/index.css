@@ -1,0 +1,67 @@
+body {
+	background: url(background.jpg);
+	background-size: cover;
+}
+
+h1 {
+	position: fixed;
+	right: 20px;
+	top: 20px;
+}
+
+h1 > span {
+	display: block;
+	background-color: white;
+	margin-bottom: 20px;
+}
+
+.wrap {
+	display: flex;
+	min-height: calc(100vh - 80px);
+}
+
+aside {
+	width: 250px;
+	background: #993300;
+}
+
+aside form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+aside h2 {
+	text-align: center;
+}
+
+aside form.memoForm textarea {
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	background: none;
+	border: none;
+	resize: none;
+}
+
+aside input[type='submit'] {
+	background: black;
+	color: white;
+	padding: 20px;
+	border-radius: 10px;
+	border: none;
+}
+
+main {
+	flex: 1;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.memo {
+	width: 200px;
+	height: 200px;
+	background-color: khaki;
+	margin: 20px;
+	box-shadow: 10px 10px 5px 0px #000000;
+}
